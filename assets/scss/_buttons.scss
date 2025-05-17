@@ -22,18 +22,46 @@
   text-transform: uppercase;
   background: var(--color);
 
+  svg {
+    flex-shrink: 0;
+  }
+
+  &.medium {
+    min-height: 54px;
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  &[data-shere-link] {
+    text-transform: none;
+    gap: 10px;
+    font-family: var(--400);
+  }
+
+  &.button--radius {
+    font-size: 24px;
+    text-shadow: 2px 2px 0px #000000;
+    border-radius: 50px;
+  }
+
   &.button--border {
     background: none;
     color: var(--color);
     border: 1px solid var(--color);
   }
 
+  &.button--red {
+    background: var(--red);
+  }
+
   &.full {
     width: 100%;
+    min-width: 100%;
   }
 
   &.small {
-    min-height: 52px;
-    padding: 10px 30px;
+    min-height: 30px;
+    font-size: 14px;
+    border-radius: 30px;
   }
 }

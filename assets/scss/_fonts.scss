@@ -13,6 +13,20 @@
 }
 
 @font-face {
+  font-family: '5kasansdesign-thin';
+  src: url('../fonts/5kasansdesign-thin.woff2') format('woff2'), url('../fonts/5kasansdesign-thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '5kasansdesign-semibold';
+  src: url('../fonts/5kasansdesign-semibold.woff2') format('woff2'), url('../fonts/5kasansdesign-semibold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'intro';
   src: url('../fonts/intro.woff2') format('woff2'), url('../fonts/intro.woff') format('woff');
   font-weight: normal;

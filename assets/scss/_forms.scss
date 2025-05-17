@@ -1,17 +1,11 @@
 :root {
-  --input-font-family: var(--900);
-  --input-font-size: 22px;
-  --input-height: 72px;
-  --input-background: #ffffff;
-  --input-border: #cccccc;
+  --input-font-family: var(--400);
+  --input-font-size: 18px;
+  --input-height: 52px;
+  --input-background: #e0e0e0;
+  --input-border: #e0e0e0;
   --input-color: var(--color);
-  --input-placeholder-color: rgba(0, 0, 0, 0.2);
-  --invalid: #b7142b;
-
-  @media (max-width: 767px) {
-    --input-font-size: 18px;
-    --input-height: 52px;
-  }
+  --input-placeholder-color: rgba(51, 51, 51, 0.4);
 }
 
 .label {
@@ -35,7 +29,13 @@
   transition: 0.3s;
   transform: rotate(0deg);
 
-  svg {
+  &.left {
+    right: 0px;
+    left: 0px;
+  }
+
+  svg,
+  img {
     width: 35%;
     height: auto;
     pointer-events: none;
@@ -60,18 +60,25 @@ span.input-icon {
   height: var(--input-height);
   background: var(--input-background);
   border: 2px solid var(--input-border);
-  border-radius: 25px;
+  border-radius: 26px;
   font-family: var(--input-font-family);
   font-size: var(--input-font-size);
   color: var(--input-color);
-  padding: 0px 30px;
+  padding: 0px 15px;
   outline: none;
   appearance: none;
   transition: 0.3s;
   box-shadow: none;
   resize: none;
-  &.input--select {
-    padding-right: var(--input-height);
+  text-transform: uppercase;
+
+  &.input--select,
+  &.input--with-icon {
+    padding-right: calc(var(--input-height) - 4px);
+  }
+
+  &.input--with-icon-left {
+    padding-left: calc(var(--input-height) - 4px);
   }
 
   &.placeholder {
@@ -138,18 +145,16 @@ textarea {
 .checkbox {
   display: none;
   + span {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: inline-block;
     position: relative;
     width: 100%;
-    font-family: var(--900);
-    padding-left: 46px;
+    font-family: var(--400);
+    padding-left: 35px;
     font-size: 12px;
-    line-height: 1.1;
+    line-height: 1.2;
     color: inherit;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 10px;
     a {
       display: inline;
       font-size: 12px;
@@ -161,11 +166,13 @@ textarea {
       content: '';
       display: block;
       position: absolute;
-      left: 0px;
-      width: 26px;
-      height: 26px;
+      left: 15px;
+      top: 1px;
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
       border: 1px solid var(--black);
-      background: #f1f1f1;
+      background: rgba(0, 0, 0, 0);
       transition: border 0.3s;
     }
   }
@@ -173,8 +180,8 @@ textarea {
   &:checked {
     + span {
       &:before {
-        background: #f1f1f1 url('../img/svg/checkbox.svg') no-repeat center center;
-        background-size: 60% 60%;
+        background: var(--black) url('../img/svg/checkbox.svg') no-repeat center center;
+        background-size: 80% 80%;
       }
     }
   }
@@ -206,12 +213,11 @@ textarea {
   overflow: hidden;
   transition: 0.3s;
   color: var(--invalid);
-  font-size: 14px;
-  font-family: var(--900);
+  font-size: 12px;
+  font-family: var(--400);
   span {
     display: block;
-    padding-top: 5px;
-    padding-left: 30px;
+    padding-top: 4px;
   }
 }
 

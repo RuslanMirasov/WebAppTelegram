@@ -8,6 +8,10 @@
   b {
     display: inline;
   }
+  @media (max-width: 374px) {
+    margin: 25px 0px;
+    font-size: 26px;
+  }
 }
 
 .about-list {

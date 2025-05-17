@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Личный кабинет" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="./../assets/css/styles.min.css" />
+    <title>Личный кабинет</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <div class="title-wrapper">
+        <h1 class="title title--h1">Личный кабинет</h1>
+      </div>
+
+      <section class="profile">
+        <h2 class="profile__name">Константин</h2>
+        <a href="tel:+79991234365" class="profile__text phone">+7 (999) 123-43-65</a>
+        <a href="mailto:k.konstantinovsky@mail.ru" class="profile__text email">k.konstantinovsky@mail.ru</a>
+        <button class="profile__text logout">Выйти</button>
+      </section>
+
+      <div class="title-wrapper">
+        <h2 class="title title--h2">Мои чеки</h2>
+      </div>
+
+      <!--ПУСТО-->
+      <!-- <section class="empty">
+        <b>У тебя пока нет чеков.</b>
+        <b>Загружай чеки <br />и выигрывай призы!</b>
+      </section> -->
+
+      <section class="table">
+        <div class="custom-scrollbar" data-simplebar>
+          <ul class="checks">
+            <li>
+              <div class="checks__left">
+                <span>125 1234 123456</span>
+                <span>ДД.ММ.ГГГГ</span>
+              </div>
+              <div class="checks__right">
+                <span>чек принят</span>
+                <b>приз не выигран</b>
+              </div>
+            </li>
+            <li>
+              <div class="checks__left">
+                <span>125 1234 123456</span>
+                <span>ДД.ММ.ГГГГ</span>
+              </div>
+              <div class="checks__right">
+                <span>чек принят</span>
+                <b>приз выигран</b>
+              </div>
+              <button class="button button--red small full" data-popup-open="shere">Пригласить друга</button>
+            </li>
+            <li>
+              <div class="checks__left">
+                <span>125 1234 123456</span>
+                <span>ДД.ММ.ГГГГ</span>
+              </div>
+              <div class="checks__right">
+                <span>чек отклонен</span>
+              </div>
+            </li>
+            <li>
+              <div class="checks__left">
+                <span>125 1234 123456</span>
+                <span>ДД.ММ.ГГГГ</span>
+              </div>
+              <div class="checks__right">
+                <span>чек в обработке</span>
+              </div>
+            </li>
+            <li>
+              <div class="checks__left">
+                <span>125 1234 123456</span>
+                <span>ДД.ММ.ГГГГ</span>
+              </div>
+              <div class="checks__right">
+                <span>чек принят</span>
+                <b>приз не выигран</b>
+              </div>
+            </li>
+            <li>
+              <div class="checks__left">
+                <span>125 1234 123456</span>
+                <span>ДД.ММ.ГГГГ</span>
+              </div>
+              <div class="checks__right">
+                <span>чек принят</span>
+                <b>приз не выигран</b>
+              </div>
+            </li>
+            <li>
+              <div class="checks__left">
+                <span>125 1234 123456</span>
+                <span>ДД.ММ.ГГГГ</span>
+              </div>
+              <div class="checks__right">
+                <span>чек отклонен</span>
+              </div>
+            </li>
+            <li>
+              <div class="checks__left">
+                <span>125 1234 123456</span>
+                <span>ДД.ММ.ГГГГ</span>
+              </div>
+              <div class="checks__right">
+                <span>чек в обработке</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="title-wrapper">
+        <h2 class="title title--h2">Мои призы</h2>
+      </div>
+
+      <!--ПУСТО-->
+      <!-- <section class="empty">
+        <b>У тебя пока нет призов.</b>
+        <b>Загружай чеки <br />и выигрывай призы!</b>
+      </section> -->
+
+      <section class="section my-prizes">
+        <div data-slider class="slider prizes">
+          <button data-arrow-prev class="swiper-arrow"></button>
+          <button data-arrow-next class="swiper-arrow"></button>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./../assets/img/prizes/2.webp" alt="" />
+                <b>Сертификат Пятёрочка<br />на 3000₽</b>
+              </div>
+              <div class="swiper-slide">
+                <img src="./../assets/img/prizes/3.webp" alt="" />
+                <b>Сертификат М.Видео<br />на 3 000₽</b>
+              </div>
+              <div class="swiper-slide">
+                <img src="./../assets/img/prizes/4.webp" alt="" />
+                <b>Сертификат <br />Яндекс Путешествия<br />на 10 000₽</b>
+              </div>
+              <div class="swiper-slide">
+                <img src="./../assets/img/prizes/5.webp" alt="" />
+                <b>Сертификат М.Видео<br />на 4 000₽</b>
+              </div>
+              <div class="swiper-slide">
+                <img src="./../assets/img/prizes/6.webp" alt="" />
+                <b>Сертификат<br />Яндекс Афиша</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="button button--radius">Как получить?</button>
+
+      <a href="../" class="button button--border">
+        <img src="./../assets/img/svg/close.svg" alt="" />
+        Закрыть
+      </a>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer" id="footer">
+      <div class="footer__content">
+        <p>
+          Сроки проведения акции, включая сроки выдачи призов с&nbsp;01&nbsp;июня&nbsp;по&nbsp;15 сентября 2025 г. Период покупок
+          с&nbsp;01&nbsp;июня&nbsp;по&nbsp;31 июля 2025 г.&nbsp;Информацию об организаторе акции, о&nbsp;правилах её&nbsp;проведения, количестве
+          призов, сроках, месте и&nbsp;порядке их&nbsp;получения можно узнать в&nbsp;чат-боте
+          <a href="https://t.me/vperedzaletom_bot" target="_blank">https://t.me/vperedzaletom_bot</a>. <br />
+          Внешний вид призов может отличаться от&nbsp;изображений в&nbsp;рекламных материалах.
+        </p>
+        <p>
+          <a href="./../assets/pdf/policy.pdf">Политика конфиденциальности</a> <br />
+          <a href="./../assets/pdf/agree.pdf">Пользовательское соглашение</a>
+        </p>
+      </div>
+    </footer>
+
+    <!--POPUPS-->
+    <div class="backdrop" data-backdrop>
+      <div class="popup" data-popup>
+        <div class="popup-content" id="shere">
+          <button class="popup-close" data-popup-close></button>
+          <h3 class="popup__title">Пригласить друга</h3>
+          <p class="popup__subtitle">Скопируйте и отправьте ссылку другу, чтобы принять участие в розыгрыше специального приза</p>
+          <button class="button button--red medium full" data-shere-link="linklink.ru/friendfriend56">
+            <span class="ellipsis">linklink.ru/friendfriend56</span>
+            <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.5834 19.9996H1.85288C1.08609 19.8371 0.552409 19.2883 0.485954 18.4953L0.483398 5.05634C0.51407 4.27555 1.08711 3.60769 1.87077 3.51367L11.6033 3.5152C12.3665 3.65624 12.891 4.24234 12.9529 5.01802C12.912 9.61945 13.028 14.2372 12.8941 18.8295C12.7555 19.4023 12.1682 19.9255 11.5839 20.0001L11.5834 19.9996ZM1.95972 4.61791C1.67549 4.70529 1.60188 4.89845 1.57837 5.17387L1.61262 18.5413C1.67345 18.8167 1.93569 18.8842 2.18413 18.9071H11.2532C11.6606 18.8724 11.8242 18.7084 11.8589 18.3016V5.25154C11.8364 4.90611 11.7618 4.64449 11.3712 4.60667L1.96023 4.6174L1.95972 4.61791Z"
+                fill="white"
+              />
+              <path
+                d="M5.43928 0.0102197L15.041 0C15.706 0.0643843 16.274 0.524783 16.4498 1.17016C16.5837 5.7624 16.4677 10.3802 16.5086 14.9816C16.4933 15.8314 15.5987 16.6704 14.7373 16.4757C14.3769 16.3945 14.265 15.8299 14.5134 15.5652C14.8155 15.2432 15.3405 15.58 15.4126 14.8626L15.4146 1.73582C15.384 1.28002 15.2746 1.12979 14.8084 1.09147L5.70255 1.09351C4.86573 1.17323 5.37129 1.89934 4.79263 2.09811C4.3484 2.25039 4.02073 1.91416 4.04578 1.4696C4.0877 0.725601 4.70879 0.0970875 5.43928 0.0102197Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./../assets/js/scripts.js" type="module"></script>
+  </body>
+</html>

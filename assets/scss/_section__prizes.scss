@@ -23,10 +23,15 @@
     width: 220px;
   }
 
-  p {
+  p,
+  b {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.01em;
+  }
+
+  b {
+    text-transform: uppercase;
   }
 
   .prizes__title {
@@ -37,5 +42,30 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-transform: uppercase;
+  }
+}
+
+.my-prizes {
+  margin-top: -20px;
+  margin-bottom: -10px;
+  .swiper-slide {
+    &:before {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 150px;
+      background-color: #252f44;
+      left: 50%;
+      margin-left: -75px;
+      top: 20px;
+      z-index: -1;
+      opacity: 0.1;
+    }
+
+    img {
+      position: relative;
+      transform: scale(0.9) translate(0%, 5%);
+    }
   }
 }

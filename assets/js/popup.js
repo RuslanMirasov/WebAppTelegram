@@ -64,6 +64,29 @@ export const popup = {
     document.addEventListener('click', e => {
       if (this._isOpening || this._isAnimating) return;
 
+      const shereButton = e.target.closest('[data-shere-link]');
+      if (shereButton) {
+        const link = shereButton.dataset.shereLink;
+
+        const span = shereButton.querySelector('.ellipsis');
+
+        if (link && span) {
+          navigator.clipboard
+            .writeText(link)
+            .then(() => {
+              const originalText = span.textContent;
+              span.textContent = 'Скопировано';
+
+              setTimeout(() => {
+                span.textContent = originalText;
+              }, 1000);
+            })
+            .catch(err => {
+              console.warn('Ошибка при копировании: ', err);
+            });
+        }
+      }
+
       const openBtn = e.target.closest('[data-popup-open]');
       if (openBtn) {
         e.preventDefault();

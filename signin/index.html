@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Логин" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../assets/css/styles.min.css" />
+    <title>Логин</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <section class="section--form">
+        <a href="./../" class="popup-close"></a>
+
+        <menu class="login-menu">
+          <li class="login-menu__link"><a href="./../signup">Регистрация</a></li>
+          <li>|</li>
+          <li class="login-menu__link active"><a href="./../signin/">Вход</a></li>
+        </menu>
+
+        <form action="#" class="form form--page" novalidate>
+          <label class="label">
+            <span class="label__text">Е-mail</span>
+            <input type="email" name="email" class="input" required />
+          </label>
+
+          <label class="label">
+            <span class="label__text">Пароль</span>
+            <div class="password-wrapper">
+              <input type="password" name="password" class="input" required />
+              <span class="input-icon" data-password>
+                <img src="./../assets/img/svg/password2.svg" alt="" class="password-icon" />
+              </span>
+            </div>
+          </label>
+
+          <label class="label label--right">
+            <input type="checkbox" name="save" class="checkbox checkbox--save" checked />
+            <span>Запомнить пароль</span>
+          </label>
+
+          <button type="submit" class="button button--red full medium">ВОЙТИ</button>
+
+          <div class="form-links">
+            <a href="./../password-recovery">Отправить пароль для входа повторно?</a>
+            <a href="./../signup">Зарегистрироваться</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./../assets/js/forms.js" type="module"></script>
+    <script src="./../assets/js/scripts.js" type="module"></script>
+  </body>
+</html>

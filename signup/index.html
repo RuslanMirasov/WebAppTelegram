@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="./../assets/img/favicon.ico" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Регистрация" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../assets/css/styles.min.css" />
+    <title>Регистрация</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <section class="section--form">
+        <a href="./../" class="popup-close"></a>
+
+        <menu class="login-menu">
+          <li class="login-menu__link active"><a href="./../signup">Регистрация</a></li>
+          <li>|</li>
+          <li class="login-menu__link"><a href="./../signin/">Вход</a></li>
+        </menu>
+
+        <form action="./../signup-success" class="form form--page" novalidate>
+          <label class="label">
+            <span class="label__text">Е-mail</span>
+            <input type="email" name="email" class="input" required />
+          </label>
+
+          <label class="label">
+            <span class="label__text">телефон</span>
+            <input type="tel" name="phone" class="input" required />
+          </label>
+
+          <label class="label">
+            <span class="label__text">Пароль</span>
+            <div class="password-wrapper">
+              <input type="password" name="password" class="input" required />
+              <span class="input-icon" data-password>
+                <img src="./../assets/img/svg/password2.svg" alt="" class="password-icon" />
+              </span>
+            </div>
+          </label>
+
+          <fieldset>
+            <label class="label">
+              <input type="checkbox" name="policy" class="checkbox" required />
+              <span>
+                Я соглашаюсь с&nbsp;полными <a href="./../assets/pdf/agree.pdf" target="_blank">правилами акции</a> и&nbsp;подтверждаю, что являюсь
+                совершеннолетним гражданином РФ
+              </span>
+            </label>
+
+            <label class="label">
+              <input type="checkbox" name="agree" class="checkbox" required />
+              <span>
+                Я согласен(на) на <a href="./../assets/pdf/policy.pdf" target="_blank">обработку персональных данных</a> и&nbsp;получение рассылок по
+                e-mail и&nbsp;sms, на&nbsp;условиях, указанных в&nbsp;<a href="./../assets/pdf/agree.pdf" target="_blank">Правилах акции</a>.
+              </span>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="button button--red full medium">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+
+          <div class="form-links">
+            <a href="./../signin">назад</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./../assets/js/forms.js" type="module"></script>
+    <script src="./../assets/js/scripts.js" type="module"></script>
+  </body>
+</html>

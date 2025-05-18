@@ -18,7 +18,7 @@ const validationRegEx = [
     type: 'password',
     name: 'password',
     regex: /^(?=.*[A-Za-z])(?=.*\d).{6,}$/,
-    error: 'Не верный формат!',
+    error: 'Не верный формат! Мин. 6 символов, буквы и цифры.',
   },
   {
     type: 'url',

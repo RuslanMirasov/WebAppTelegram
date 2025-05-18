@@ -18,3 +18,30 @@ export const debounce = (func, delay) => {
     }, delay);
   };
 };
+
+export const passwordToggle = () => {
+  const passwords = document.querySelectorAll('[data-password]');
+
+  if (!passwords || passwords.langth === 0) return;
+
+  const handlePasswordToggle = e => {
+    e.preventDefault();
+    const icon = e.currentTarget.querySelector('img');
+    const iconUrl = icon.src.split('password');
+    const input = e.currentTarget.closest('.password-wrapper').querySelector('input[name="password"]');
+
+    if (!icon || !input) return;
+
+    if (iconUrl[1].includes('2.svg')) {
+      icon.src = `${iconUrl[0]}password.svg`;
+      input.type = 'text';
+      return;
+    }
+
+    icon.src = `${iconUrl[0]}password2.svg`;
+    input.type = 'password';
+    // console.log(icon.src);
+  };
+
+  passwords.forEach(password => password.addEventListener('click', handlePasswordToggle));
+};

@@ -97,6 +97,11 @@ body {
   gap: 30px;
   padding: 30px 20px 40px 20px;
 }
+@media (max-width: 359px) {
+  .main {
+    padding: 30px 10px 40px 10px;
+  }
+}
 
 img {
   display: block;
@@ -676,6 +681,13 @@ a {
 }
 .form--filters .label.label-select {
   max-width: 132px;
+}
+@media (max-width: 359px) {
+  .form--filters .label.label-select {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .form--filters .label .input {
   height: 35px;

@@ -22,8 +22,10 @@
   text-transform: uppercase;
   background: var(--color);
 
-  svg {
+  svg,
+  span {
     flex-shrink: 0;
+    pointer-events: none;
   }
 
   &.medium {

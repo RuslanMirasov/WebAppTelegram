@@ -132,6 +132,18 @@ body.locked {
   border-radius: 20px;
   background: var(--white);
   padding: 30px;
+
+  &.popup-content--dark {
+    background: var(--color);
+    color: var(--white);
+    .popup-close,
+    .file-reset {
+      &:before,
+      &:after {
+        background: var(--white);
+      }
+    }
+  }
 }
 
 .popup__title {

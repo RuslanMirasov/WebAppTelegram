@@ -300,8 +300,10 @@ a {
   text-transform: uppercase;
   background: var(--color);
 }
-.button svg {
+.button svg,
+.button span {
   flex-shrink: 0;
+  pointer-events: none;
 }
 .button.medium {
   min-height: 54px;
@@ -1549,6 +1551,15 @@ body.locked {
   border-radius: 20px;
   background: var(--white);
   padding: 30px;
+}
+.popup-content.popup-content--dark {
+  background: var(--color);
+  color: var(--white);
+}
+.popup-content.popup-content--dark .popup-close:before, .popup-content.popup-content--dark .popup-close:after,
+.popup-content.popup-content--dark .file-reset:before,
+.popup-content.popup-content--dark .file-reset:after {
+  background: var(--white);
 }
 
 .popup__title {

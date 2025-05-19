@@ -22,7 +22,7 @@
         <h2 class="profile__name">Константин</h2>
         <a href="tel:+79991234365" class="profile__text phone">+7 (999) 123-43-65</a>
         <a href="mailto:k.konstantinovsky@mail.ru" class="profile__text email">k.konstantinovsky@mail.ru</a>
-        <button class="profile__text logout">Выйти</button>
+        <button class="profile__text logout" data-popup-open="test">Выйти</button>
       </section>
 
       <div class="title-wrapper">
@@ -188,6 +188,7 @@
     <!--POPUPS-->
     <div class="backdrop" data-backdrop>
       <div class="popup" data-popup>
+        <!--Поделиться ссылкой-->
         <div class="popup-content" id="shere">
           <button class="popup-close" data-popup-close></button>
           <h3 class="popup__title">Пригласить друга</h3>
@@ -204,6 +205,16 @@
                 fill="white"
               />
             </svg>
+          </button>
+        </div>
+
+        <!--Чрная всплывашка-->
+        <div class="popup-content popup-content--dark" id="test">
+          <button class="popup-close" data-popup-close></button>
+          <h3 class="popup__title">Заголовок</h3>
+          <p class="popup__subtitle">Текст модалки, какой-то текст модалки, может занимать несколько строчек</p>
+          <button class="button button--red medium full" data-popup-close>
+            <span>КНОПКА</span>
           </button>
         </div>
       </div>

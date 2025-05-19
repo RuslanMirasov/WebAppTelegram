@@ -203,6 +203,7 @@ a {
 
 .navigation__link {
   font-family: var(--900);
+  font-size: 20px;
   text-transform: uppercase;
   color: var(--color);
 }

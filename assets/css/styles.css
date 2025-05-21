@@ -95,7 +95,7 @@ body {
   position: relative;
   z-index: 1;
   gap: 30px;
-  padding: 30px 20px 40px 20px;
+  padding: 30px 15px 40px 15px;
 }
 @media (max-width: 359px) {
   .main {
@@ -346,11 +346,11 @@ a {
   align-items: center;
   align-content: center;
   width: 100%;
-  padding: 15px 30px;
+  padding: 15px 15px;
 }
 @media (hover: none) and (pointer: coarse) {
   .title-wrapper {
-    padding: 18px 30px 12px 30px;
+    padding: 18px 15px 12px 15px;
   }
 }
 .title-wrapper:before {
@@ -390,6 +390,15 @@ a {
 }
 .title.title--h1 {
   text-align: center;
+}
+.title.title--h2 {
+  text-align: center;
+  font-size: 32px;
+}
+@media (max-width: 374px) {
+  .title.title--h2 {
+    font-size: 30px;
+  }
 }
 
 .about-title {
@@ -1036,6 +1045,18 @@ a {
   border-bottom: 1px solid var(--color);
   font-size: 14px;
   line-height: 1.1;
+}
+
+.howtoget p,
+.howtoget li {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+.howtoget ol {
+  width: calc(100% - 20px);
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .footer {

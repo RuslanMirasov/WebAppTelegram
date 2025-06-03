@@ -496,7 +496,14 @@ a {
 
 .my-prizes {
   margin-top: -20px;
-  margin-bottom: -10px;
+  margin-bottom: 0px;
+}
+.my-prizes .swiper-arrow {
+  top: 35%;
+}
+.my-prizes .swiper-slide a {
+  position: relative;
+  margin-top: 30px;
 }
 .my-prizes .swiper-slide:before {
   content: "";
